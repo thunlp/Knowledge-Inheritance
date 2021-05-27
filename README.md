@@ -44,3 +44,4 @@ RoBERTa_WB_BASE_PLUS -> RoBERTa_WB_LARGE
 RoBERTa_WB_BASE -> RoBERTa_WB_BASE_PLUS -> RoBERTa_WB_LARGE
 ```
 
+![arch](https://github.com/thunlp/CorefBERT/blob/master/model.jpg)
