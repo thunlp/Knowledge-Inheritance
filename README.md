@@ -2,7 +2,9 @@
 
 Source code for paper: Knowledge Inheritance for Pre-trained Language Models. The trained model parameters (in [Fairseq](https://github.com/pytorch/fairseq) format) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/aab1777a161545038c01/). You can use convert_fairseq_to_huggingface.py to convert the Fairseq format into Huggingface's [transformers](https://github.com/huggingface/transformers) format easily.
 
-## 1. Available Pretrained Models (WB: Wikipedia + BookCorpus; CS: computer science papers; BIO: biomedical papers)
+## 1. Available Pretrained Models
+
+WB domain: Wikipedia + BookCorpus; CS domain: computer science papers; BIO domain: biomedical papers;
 
 ### Models trained by self-learning
 
