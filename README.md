@@ -2,33 +2,39 @@
 
 Source code for paper: Knowledge Inheritance for Pre-trained Language Models. The trained model parameters (in [Fairseq](https://github.com/pytorch/fairseq) format) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/aab1777a161545038c01/).
 
-## 1. Available Pretrained Models on Wikipedia + BookCorpus (WB domain)
+## 1. Available Pretrained Models (WB: Wikipedia + BookCorpus; CS: computer science papers; BIO: biomedical papers)
 
 ### Models trained by self-learning
 
 ```
-RoBERTa_H_4
-RoBERTa_H_6
-RoBERTa_H_8
-RoBERTa_H_10
-RoBERTa_D_288
-RoBERTa_D_384
-RoBERTa_D_480
-RoBERTa_D_576
-RoBERTa_D_672
-RoBERTa_BASE
-RoBERTa_MEDIUM
-RoBERTa_BASE_PLUS
-RoBERTa_LARGE
-GPT_MEDIUM
-GPT_BASE
-GPT_BASE_PLUS
+RoBERTa_WB_H_4
+RoBERTa_WB_H_6
+RoBERTa_WB_H_8
+RoBERTa_WB_H_10
+RoBERTa_WB_D_288
+RoBERTa_WB_D_384
+RoBERTa_WB_D_480
+RoBERTa_WB_D_576
+RoBERTa_WB_D_672
+RoBERTa_WB_BASE
+RoBERTa_WB_MEDIUM
+RoBERTa_WB_BASE_PLUS
+RoBERTa_WB_LARGE
+GPT_WB_MEDIUM
+GPT_WB_BASE
+GPT_WB_BASE_PLUS
+RoBERTa_CS_MEDIUM
+RoBERTa_CS_BASE
+RoBERTa_BIO_MEDIUM
+RoBERTa_BIO_BASE
 ```
 
 ### Models trained by self-learning
 
 ```
-RoBERTa_BASE -> RoBERTa_LARGE
-RoBERTa_MEDIUM
-RoBERTa_LARGE
+RoBERTa_WB_BASE -> RoBERTa_WB_BASE_PLUS
+RoBERTa_WB_BASE -> RoBERTa_WB_LARGE
+RoBERTa_WB_BASE_PLUS -> RoBERTa_WB_LARGE
+RoBERTa_WB_BASE -> RoBERTa_WB_BASE_PLUS -> RoBERTa_WB_LARGE
 ```
+
