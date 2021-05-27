@@ -35,7 +35,7 @@ RoBERTa_BIO_MEDIUM
 RoBERTa_BIO_BASE
 ```
 
-### Models trained by self-learning
+### Models trained by Knowledge Inheritance
 
 ```
 RoBERTa_WB_BASE -> RoBERTa_WB_BASE_PLUS
