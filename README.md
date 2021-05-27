@@ -10,11 +10,6 @@ WB domain: Wikipedia + BookCorpus; CS domain: computer science papers; BIO domai
 
 ### Models trained by self-learning
 
-[RoBERTa_WB_H_4]()
-[RoBERTa_WB_H_6]()
-[RoBERTa_WB_H_8]()
-[RoBERTa_WB_H_10]()
-
 ```
 RoBERTa_WB_H_4
 RoBERTa_WB_H_6
