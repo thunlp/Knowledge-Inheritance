@@ -1,10 +1,12 @@
 # Knowledge-Inheritance
 
-Source code paper: Knowledge Inheritance for Pre-trained Language Models (NAACL 2022). The trained model parameters (in [Fairseq](https://github.com/pytorch/fairseq) format) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/aab1777a161545038c01/).
+Source code for our NAACL 2022 paper: Knowledge Inheritance for Pre-trained Language Models.
 
-You can use convert_fairseq_to_huggingface.py to convert the Fairseq format into Huggingface's [transformers](https://github.com/huggingface/transformers) format easily.
+The trained model parameters (in [Fairseq](https://github.com/pytorch/fairseq) format) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/aab1777a161545038c01/). Please follow [ELLE](https://github.com/thunlp/ELLE) to convert the trained checkpoint from Fairseq format into Huggingface [transformers](https://github.com/huggingface/transformers) format.
 
-We refer the downstream performance evaluation to the implementation of [Fairseq](https://github.com/pytorch/fairseq) (GLUE tasks) and [Don't Stop Pre-training](https://github.com/allenai/dont-stop-pretraining) (ACL-ARC / CHEMPROT).
+We also provide the pre-training data (already processed in fairseq format) we use in [google drive](https://drive.google.com/drive/folders/1l1cuN9JQUqZTM_1NFNtetfiXMKWqGTUo?usp=sharing), covering five pre-training domains (WB, News, Reviews, BIO and CS). We sample around 3400M tokens for each domain.
+
+We refer the downstream performance evaluation to the implementation of [Fairseq](https://github.com/pytorch/fairseq) (GLUE tasks) and [Don't Stop Pre-training](https://github.com/allenai/dont-stop-pretraining) (ACL-ARC / CHEMPROT). For ACL-ARC / CHEMPROT, please refer to [ELLE](https://github.com/thunlp/ELLE) for easy implementation.
 
 If you have any question, feel free to contact me by email (yujiaqin16@gmail.com).
 
@@ -34,45 +36,3 @@ For pre-training corpus collection, since BookCorpus is not publically available
 ## Downstream evaluation
 
 For downstream evaluation, (1) GLUE: we refer to the implementation of [Fairseq](https://github.com/pytorch/fairseq); (2) ACL-ARC & CHEMPROT: first use convert_fairseq_to_huggingface.py to convert the Fairseq format into Huggingface's [transformers](https://github.com/huggingface/transformers) format, then test the performance using the implementation of [Don't Stop Pre-training](https://github.com/allenai/dont-stop-pretraining).
-
-## Trained Models and Pre-training Data
-
-### Pre-training Data
-
-We provided the pre-training data (already processed in fairseq format) we use in [google drive](https://drive.google.com/drive/folders/1l1cuN9JQUqZTM_1NFNtetfiXMKWqGTUo?usp=sharing), covering five pre-training domains (WB, News, Reviews, BIO and CS). We sample around 3400M tokens for each domain.
-
-### Models trained by self-learning
-
-```
-RoBERTa_WB_H_4
-RoBERTa_WB_H_6
-RoBERTa_WB_H_8
-RoBERTa_WB_H_10
-RoBERTa_WB_D_288
-RoBERTa_WB_D_384
-RoBERTa_WB_D_480
-RoBERTa_WB_D_576
-RoBERTa_WB_D_672
-RoBERTa_WB_BASE
-RoBERTa_WB_MEDIUM
-RoBERTa_WB_BASE_PLUS
-RoBERTa_WB_LARGE
-GPT_WB_MEDIUM
-GPT_WB_BASE
-GPT_WB_BASE_PLUS
-RoBERTa_CS_MEDIUM
-RoBERTa_CS_BASE
-RoBERTa_BIO_MEDIUM
-RoBERTa_BIO_BASE
-```
-
-### Models trained by Knowledge Inheritance
-
-```
-RoBERTa_WB_BASE -> RoBERTa_WB_BASE_PLUS
-RoBERTa_WB_BASE -> RoBERTa_WB_LARGE
-RoBERTa_WB_BASE_PLUS -> RoBERTa_WB_LARGE
-RoBERTa_WB_BASE -> RoBERTa_WB_BASE_PLUS -> RoBERTa_WB_LARGE
-```
-
-![arch](https://github.com/thuqinyj16/Knowledge-Inheritance/blob/main/arch.png)
