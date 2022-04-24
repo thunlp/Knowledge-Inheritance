@@ -1,6 +1,8 @@
 # Knowledge-Inheritance
 
-Source code paper: Knowledge Inheritance for Pre-trained Language Models (preprint). The trained model parameters (in [Fairseq](https://github.com/pytorch/fairseq) format) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/aab1777a161545038c01/). You can use convert_fairseq_to_huggingface.py to convert the Fairseq format into Huggingface's [transformers](https://github.com/huggingface/transformers) format easily.
+Source code paper: Knowledge Inheritance for Pre-trained Language Models (preprint). The trained model parameters (in [Fairseq](https://github.com/pytorch/fairseq) format) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/aab1777a161545038c01/).
+
+You can use convert_fairseq_to_huggingface.py to convert the Fairseq format into Huggingface's [transformers](https://github.com/huggingface/transformers) format easily.
 
 We refer the downstream performance evaluation to the implementation of [Fairseq](https://github.com/pytorch/fairseq) (GLUE tasks) and [Don't Stop Pre-training](https://github.com/allenai/dont-stop-pretraining) (ACL-ARC / CHEMPROT).
 
