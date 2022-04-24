@@ -31,8 +31,6 @@ cd examples/roberta
 bash train_base_to_base_plus.sh
 ```
 
-For pre-training corpus collection, since BookCorpus is not publically available, you need to crawl it by yourself. We refer to [StackingBERT](https://github.com/gonglinyuan/StackingBERT) for data collection.
-
 ## Downstream evaluation
 
 For downstream evaluation, (1) GLUE: we refer to the implementation of [Fairseq](https://github.com/pytorch/fairseq); (2) ACL-ARC & CHEMPROT: first use convert_fairseq_to_huggingface.py to convert the Fairseq format into Huggingface's [transformers](https://github.com/huggingface/transformers) format, then test the performance using the implementation of [Don't Stop Pre-training](https://github.com/allenai/dont-stop-pretraining).
